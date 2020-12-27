@@ -16,7 +16,7 @@
             android:theme="@style/NoUiAppTheme">
             <intent-filter
                 android:icon="@drawable/p_min"
-                android:label="Send with prefix '-'"
+                android:label="-play"
                 android:priority="100000000">
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -28,7 +28,7 @@
             android:theme="@style/NoUiAppTheme">
             <intent-filter
                 android:icon="@drawable/p_eq"
-                android:label="Send with prefix '='"
+                android:label="=play"
                 android:priority="99999999">
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -40,7 +40,7 @@
             android:theme="@style/NoUiAppTheme">
             <intent-filter
                 android:icon="@drawable/p_exc"
-                android:label="Send with prefix '!'"
+                android:label="!play"
                 android:priority="99999998">
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />

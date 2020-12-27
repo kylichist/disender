@@ -3,8 +3,7 @@ package com.github.kylichist.disender
 import android.app.Activity
 import android.content.Intent
 
-@Suppress("unused")
-fun Unit.send(prefix: String, activity: Activity) =
+fun Activity.sendString(prefix: String) {
     Intent().apply {
         setClassName(
             "com.discord",
@@ -13,10 +12,9 @@ fun Unit.send(prefix: String, activity: Activity) =
         action = Intent.ACTION_SEND
         putExtra(
             Intent.EXTRA_TEXT,
-            "${prefix}play ${activity.intent.extras?.getString("android.intent.extra.TEXT")}"
+            "${prefix}play ${intent.extras?.getString("android.intent.extra.TEXT")?.substringAfterLast(" ")}"
         )
-        with(activity) {
-            startActivity(this@apply)
-            finish()
-        }
-    }.run { }
+        startActivity(this@apply)
+        finish()
+    }
+}
