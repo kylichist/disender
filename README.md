@@ -1,3 +1,6 @@
+# Maintenance notice
+This project is no longer maintained since most of discord youtube music bots were shut down. This repository is now public-archive.
+
 # What is it?
 DiSender is a simple android app that eases procedure to play music in Discord.
 
